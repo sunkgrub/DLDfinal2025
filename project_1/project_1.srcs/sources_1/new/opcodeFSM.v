@@ -26,6 +26,7 @@ module opcodeFSM(
     input sub,
     input mult,
     input clk,
+    output [2:0] currentState,
     output [2:0] opcode
 );
     
@@ -52,5 +53,6 @@ opcodeLogic ol0(
     .d(opcode)
 );
 
+assign currentState = Qw;
 
 endmodule

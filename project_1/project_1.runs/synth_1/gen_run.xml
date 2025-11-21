@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="synth_1" LaunchPart="xc7a35tcpg236-1" LaunchTime="1763527105" LaunchIncrCheckpoint="$PSRCDIR/utils_1/imports/synth_1/opcodeFSM.dcp">
-  <File Type="PA-TCL" Name="testbuttons.tcl"/>
-  <File Type="REPORTS-TCL" Name="testbuttons_reports.tcl"/>
-  <File Type="RDS-RDS" Name="testbuttons.vds"/>
-  <File Type="RDS-PROPCONSTRS" Name="testbuttons_drc_synth.rpt"/>
-  <File Type="RDS-UTIL" Name="testbuttons_utilization_synth.rpt"/>
-  <File Type="RDS-UTIL-PB" Name="testbuttons_utilization_synth.pb"/>
-  <File Type="RDS-DCP" Name="testbuttons.dcp"/>
-  <File Type="VDS-TIMINGSUMMARY" Name="testbuttons_timing_summary_synth.rpt"/>
-  <File Type="VDS-TIMING-PB" Name="testbuttons_timing_summary_synth.pb"/>
+<GenRun Id="synth_1" LaunchPart="xc7a35tcpg236-1" LaunchTime="1763750837" LaunchIncrCheckpoint="$PSRCDIR/utils_1/imports/synth_1/opcodeFSM.dcp">
+  <File Type="PA-TCL" Name="testFSM.tcl"/>
+  <File Type="REPORTS-TCL" Name="testFSM_reports.tcl"/>
+  <File Type="RDS-RDS" Name="testFSM.vds"/>
+  <File Type="RDS-PROPCONSTRS" Name="testFSM_drc_synth.rpt"/>
+  <File Type="RDS-UTIL" Name="testFSM_utilization_synth.rpt"/>
+  <File Type="RDS-UTIL-PB" Name="testFSM_utilization_synth.pb"/>
+  <File Type="RDS-DCP" Name="testFSM.dcp"/>
+  <File Type="VDS-TIMINGSUMMARY" Name="testFSM_timing_summary_synth.rpt"/>
+  <File Type="VDS-TIMING-PB" Name="testFSM_timing_summary_synth.pb"/>
   <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1" RelGenDir="$PGENDIR/sources_1">
     <Filter Type="Srcs"/>
     <File Path="$PPRDIR/../../../../../../../Downloads/debouncer.v">
@@ -18,7 +18,14 @@
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>
-    <File Path="$PSRCDIR/sources_1/new/testbuttons.v">
+    <File Path="$PPRDIR/../Verilog/decoder.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../Verilog/dff_en.v">
       <FileInfo>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="implementation"/>
@@ -27,7 +34,6 @@
     </File>
     <File Path="$PPRDIR/../Verilog/Custom Verilog/Opcode FSM/nextStateLogic.v">
       <FileInfo>
-        <Attr Name="AutoDisabled" Val="1"/>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="implementation"/>
         <Attr Name="UsedIn" Val="simulation"/>
@@ -35,7 +41,6 @@
     </File>
     <File Path="$PSRCDIR/sources_1/new/opcodeFSM.v">
       <FileInfo>
-        <Attr Name="AutoDisabled" Val="1"/>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="implementation"/>
         <Attr Name="UsedIn" Val="simulation"/>
@@ -43,7 +48,6 @@
     </File>
     <File Path="$PPRDIR/../Verilog/Custom Verilog/Opcode FSM/opcodeLogic.v">
       <FileInfo>
-        <Attr Name="AutoDisabled" Val="1"/>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="implementation"/>
         <Attr Name="UsedIn" Val="simulation"/>
@@ -51,13 +55,19 @@
     </File>
     <File Path="$PPRDIR/../Verilog/Custom Verilog/reg3.v">
       <FileInfo>
-        <Attr Name="AutoDisabled" Val="1"/>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="implementation"/>
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>
     <File Path="$PSRCDIR/sources_1/new/testFSM.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/testbuttons.v">
       <FileInfo>
         <Attr Name="AutoDisabled" Val="1"/>
         <Attr Name="UsedIn" Val="synthesis"/>
@@ -91,7 +101,7 @@
     </File>
     <Config>
       <Option Name="DesignMode" Val="RTL"/>
-      <Option Name="TopModule" Val="testbuttons"/>
+      <Option Name="TopModule" Val="testFSM"/>
     </Config>
   </FileSet>
   <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1" RelGenDir="$PGENDIR/constrs_1">
