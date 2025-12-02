@@ -38,6 +38,7 @@ mult16x1 m0(
 assign P[0] = prodWires[0];
 
 mult16x1 m1(
+    .A(A),
     .sum_in({1'b0,prodWires[15:1]}),
     .B(B[1]),
     .P(prodWires[31:16]),
@@ -48,6 +49,7 @@ mult16x1 m1(
 assign P[1] = prodWires[16];
 
 mult16x1 m2(
+    .A(A),
     .sum_in({1'b0,prodWires[31:17]}),
     .B(B[2]),
     .P(prodWires[47:32]),
@@ -58,6 +60,7 @@ mult16x1 m2(
 assign P[2] = prodWires[32];
 
 mult16x1 m3(
+    .A(A),
     .sum_in({1'b0,prodWires[47:33]}),
     .B(B[3]),
     .P(prodWires[63:48]),
@@ -68,6 +71,7 @@ mult16x1 m3(
 assign P[3] = prodWires[48];
 
 mult16x1 m4(
+    .A(A),
     .sum_in({1'b0,prodWires[63:49]}),
     .B(B[4]),
     .P(prodWires[79:64]),
@@ -78,6 +82,7 @@ mult16x1 m4(
 assign P[4] = prodWires[64];
 
 mult16x1 m5(
+    .A(A),
     .sum_in({1'b0,prodWires[79:65]}),
     .B(B[5]),
     .P(prodWires[95:80]),
@@ -88,6 +93,7 @@ mult16x1 m5(
 assign P[5] = prodWires[80];
 
 mult16x1 m6(
+    .A(A),
     .sum_in({1'b0,prodWires[95:81]}),
     .B(B[6]),
     .P(prodWires[111:96]),
@@ -98,6 +104,7 @@ mult16x1 m6(
 assign P[6] = prodWires[96];
 
 mult16x1 m7(
+    .A(A),
     .sum_in({1'b0,prodWires[111:97]}),
     .B(B[7]),
     .P(prodWires[127:112]),
@@ -108,6 +115,7 @@ mult16x1 m7(
 assign P[7] = prodWires[112];
 
 mult16x1 m8(
+    .A(A),
     .sum_in({1'b0,prodWires[127:113]}),
     .B(B[8]),
     .P(prodWires[143:128]),
@@ -118,6 +126,7 @@ mult16x1 m8(
 assign P[8] = prodWires[128];
 
 mult16x1 m9(
+    .A(A),
     .sum_in({1'b0,prodWires[143:129]}),
     .B(B[9]),
     .P(prodWires[159:144]),
@@ -128,6 +137,7 @@ mult16x1 m9(
 assign P[9] = prodWires[144];
 
 mult16x1 m10(
+    .A(A),
     .sum_in({1'b0,prodWires[159:145]}),
     .B(B[10]),
     .P(prodWires[175:160]),
@@ -138,6 +148,7 @@ mult16x1 m10(
 assign P[10] = prodWires[160];
 
 mult16x1 m11(
+    .A(A),
     .sum_in({1'b0,prodWires[175:161]}),
     .B(B[11]),
     .P(prodWires[191:176]),
@@ -148,6 +159,7 @@ mult16x1 m11(
 assign P[11] = prodWires[176];
 
 mult16x1 m12(
+    .A(A),
     .sum_in({1'b0,prodWires[191:177]}),
     .B(B[12]),
     .P(prodWires[207:192]),
@@ -158,6 +170,7 @@ mult16x1 m12(
 assign P[12] = prodWires[192];
 
 mult16x1 m13(
+    .A(A),
     .sum_in({1'b0,prodWires[207:193]}),
     .B(B[13]),
     .P(prodWires[223:208]),
@@ -168,6 +181,7 @@ mult16x1 m13(
 assign P[13] = prodWires[208];
 
 mult16x1 m14(
+    .A(A),
     .sum_in({1'b0,prodWires[223:209]}),
     .B(B[14]),
     .P(prodWires[239:224]),
@@ -178,6 +192,7 @@ mult16x1 m14(
 assign P[14] = prodWires[224];
 
 mult16x1 m15(
+    .A(A),
     .sum_in({1'b0,prodWires[239:225]}),
     .B(B[15]),
     .P(prodWires[255:240]),

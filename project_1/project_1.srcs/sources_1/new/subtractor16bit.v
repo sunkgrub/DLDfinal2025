@@ -28,6 +28,8 @@ module subtractor16bit(
 );
 
 wire [15:0] notB;
+wire [15:0] diffW, notDiffW, negW;
+
 
 assign notB = ~B;
 
@@ -36,7 +38,22 @@ adder16bit ad0(
     .B(notB),
     .c_in(1'b1),
     .c_out(c_out),
-    .S(D)
+    .S(diffW)
+);
+
+assign notDiffW = ~diffW;
+
+adder16bit ad1(
+    .A(16'b0),
+    .B(notDiffW),
+    .c_in(1'b1),
+    .S(negW)
+);
+
+multibit_mux #(.NUM_INPUTS(2), .BUS_WIDTH(16)) MBMUX (
+.data_out(D),
+.select_in(diffW[15]),
+.data_in({negW, diffW})
 );
 
 endmodule

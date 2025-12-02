@@ -3,11 +3,11 @@
 # SW Build 6140274 on Thu May 22 00:12:29 MDT 2025
 # IP Build 6138677 on Thu May 22 03:10:11 MDT 2025
 # SharedData Build 6139179 on Tue May 20 17:58:58 MDT 2025
-# Start of session at: Fri Nov 21 13:47:59 2025
-# Process ID         : 17648
+# Start of session at: Tue Dec  2 18:03:43 2025
+# Process ID         : 21280
 # Current directory  : C:/Users/sunkg/OneDrive/Desktop/Binghamton/Semester 3/DLD/Final/project_1/project_1.runs/impl_1
-# Command line       : vivado.exe -log testFSM.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source testFSM.tcl -notrace
-# Log file           : C:/Users/sunkg/OneDrive/Desktop/Binghamton/Semester 3/DLD/Final/project_1/project_1.runs/impl_1/testFSM.vdi
+# Command line       : vivado.exe -log arithmeticTest.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source arithmeticTest.tcl -notrace
+# Log file           : C:/Users/sunkg/OneDrive/Desktop/Binghamton/Semester 3/DLD/Final/project_1/project_1.runs/impl_1/arithmeticTest.vdi
 # Journal file       : C:/Users/sunkg/OneDrive/Desktop/Binghamton/Semester 3/DLD/Final/project_1/project_1.runs/impl_1\vivado.jou
 # Running On         : Alienware-M16R2
 # Platform           : Windows Server 2016 or Windows 10
@@ -19,6 +19,6 @@
 # Host memory        : 33844 MB
 # Swap memory        : 9126 MB
 # Total Virtual      : 42971 MB
-# Available Virtual  : 11882 MB
+# Available Virtual  : 17665 MB
 #-----------------------------------------------------------
-source testFSM.tcl -notrace
+source arithmeticTest.tcl -notrace

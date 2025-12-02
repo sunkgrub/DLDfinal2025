@@ -41,4 +41,4 @@ EAStep()
      fi
 }
 
-EAStep vivado -log testFSM.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source testFSM.tcl
+EAStep vivado -log arithmeticTest.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source arithmeticTest.tcl
