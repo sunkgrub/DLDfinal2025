@@ -1,0 +1,317 @@
+#-----------------------------------------------------------
+# Vivado v2025.1 (64-bit)
+# SW Build 6140274 on Thu May 22 00:12:29 MDT 2025
+# IP Build 6138677 on Thu May 22 03:10:11 MDT 2025
+# SharedData Build 6139179 on Tue May 20 17:58:58 MDT 2025
+# Start of session at: Fri Dec  5 14:32:46 2025
+# Process ID         : 7796
+# Current directory  : C:/Users/sunkg/OneDrive/Desktop/Binghamton/Semester 3/DLD/Final/project_1/project_1.runs/synth_1
+# Command line       : vivado.exe -log testFSM.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source testFSM.tcl
+# Log file           : C:/Users/sunkg/OneDrive/Desktop/Binghamton/Semester 3/DLD/Final/project_1/project_1.runs/synth_1/testFSM.vds
+# Journal file       : C:/Users/sunkg/OneDrive/Desktop/Binghamton/Semester 3/DLD/Final/project_1/project_1.runs/synth_1\vivado.jou
+# Running On         : Alienware-M16R2
+# Platform           : Windows Server 2016 or Windows 10
+# Operating System   : 26200
+# Processor Detail   : Intel(R) Core(TM) Ultra 9 185H
+# CPU Frequency      : 3072 MHz
+# CPU Physical cores : 16
+# CPU Logical cores  : 22
+# Host memory        : 33844 MB
+# Swap memory        : 9126 MB
+# Total Virtual      : 42971 MB
+# Available Virtual  : 16728 MB
+#-----------------------------------------------------------
+source testFSM.tcl -notrace
+Command: read_checkpoint -auto_incremental -incremental {C:/Users/sunkg/OneDrive/Desktop/Binghamton/Semester 3/DLD/Final/project_1/project_1.srcs/utils_1/imports/synth_1/opcodeFSM.dcp}
+INFO: [Vivado 12-5825] Read reference checkpoint from C:/Users/sunkg/OneDrive/Desktop/Binghamton/Semester 3/DLD/Final/project_1/project_1.srcs/utils_1/imports/synth_1/opcodeFSM.dcp for incremental synthesis
+INFO: [Vivado 12-7989] Please ensure there are no constraint changes
+Command: synth_design -top testFSM -part xc7a35tcpg236-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Device 21-403] Loading part xc7a35tcpg236-1
+INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
+INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 28896
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 1179.238 ; gain = 494.145
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'testFSM' [C:/Users/sunkg/OneDrive/Desktop/Binghamton/Semester 3/DLD/Final/project_1/project_1.srcs/sources_1/new/testFSM.v:44]
+INFO: [Synth 8-6157] synthesizing module 'debouncer' [C:/Users/sunkg/Downloads/debouncer.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'debouncer' (0#1) [C:/Users/sunkg/Downloads/debouncer.v:3]
+WARNING: [Synth 8-7071] port 'PB_state' of module 'debouncer' is unconnected for instance 'dbU' [C:/Users/sunkg/OneDrive/Desktop/Binghamton/Semester 3/DLD/Final/project_1/project_1.srcs/sources_1/new/testFSM.v:55]
+WARNING: [Synth 8-7071] port 'PB_down' of module 'debouncer' is unconnected for instance 'dbU' [C:/Users/sunkg/OneDrive/Desktop/Binghamton/Semester 3/DLD/Final/project_1/project_1.srcs/sources_1/new/testFSM.v:55]
+WARNING: [Synth 8-7023] instance 'dbU' of module 'debouncer' has 5 connections declared, but only 3 given [C:/Users/sunkg/OneDrive/Desktop/Binghamton/Semester 3/DLD/Final/project_1/project_1.srcs/sources_1/new/testFSM.v:55]
+WARNING: [Synth 8-7071] port 'PB_state' of module 'debouncer' is unconnected for instance 'dbC' [C:/Users/sunkg/OneDrive/Desktop/Binghamton/Semester 3/DLD/Final/project_1/project_1.srcs/sources_1/new/testFSM.v:61]
+WARNING: [Synth 8-7071] port 'PB_down' of module 'debouncer' is unconnected for instance 'dbC' [C:/Users/sunkg/OneDrive/Desktop/Binghamton/Semester 3/DLD/Final/project_1/project_1.srcs/sources_1/new/testFSM.v:61]
+WARNING: [Synth 8-7023] instance 'dbC' of module 'debouncer' has 5 connections declared, but only 3 given [C:/Users/sunkg/OneDrive/Desktop/Binghamton/Semester 3/DLD/Final/project_1/project_1.srcs/sources_1/new/testFSM.v:61]
+WARNING: [Synth 8-7071] port 'PB_state' of module 'debouncer' is unconnected for instance 'dbL' [C:/Users/sunkg/OneDrive/Desktop/Binghamton/Semester 3/DLD/Final/project_1/project_1.srcs/sources_1/new/testFSM.v:67]
+WARNING: [Synth 8-7071] port 'PB_down' of module 'debouncer' is unconnected for instance 'dbL' [C:/Users/sunkg/OneDrive/Desktop/Binghamton/Semester 3/DLD/Final/project_1/project_1.srcs/sources_1/new/testFSM.v:67]
+WARNING: [Synth 8-7023] instance 'dbL' of module 'debouncer' has 5 connections declared, but only 3 given [C:/Users/sunkg/OneDrive/Desktop/Binghamton/Semester 3/DLD/Final/project_1/project_1.srcs/sources_1/new/testFSM.v:67]
+WARNING: [Synth 8-7071] port 'PB_state' of module 'debouncer' is unconnected for instance 'dbR' [C:/Users/sunkg/OneDrive/Desktop/Binghamton/Semester 3/DLD/Final/project_1/project_1.srcs/sources_1/new/testFSM.v:73]
+WARNING: [Synth 8-7071] port 'PB_down' of module 'debouncer' is unconnected for instance 'dbR' [C:/Users/sunkg/OneDrive/Desktop/Binghamton/Semester 3/DLD/Final/project_1/project_1.srcs/sources_1/new/testFSM.v:73]
+WARNING: [Synth 8-7023] instance 'dbR' of module 'debouncer' has 5 connections declared, but only 3 given [C:/Users/sunkg/OneDrive/Desktop/Binghamton/Semester 3/DLD/Final/project_1/project_1.srcs/sources_1/new/testFSM.v:73]
+INFO: [Synth 8-6157] synthesizing module 'opcodeFSM' [C:/Users/sunkg/OneDrive/Desktop/Binghamton/Semester 3/DLD/Final/project_1/project_1.srcs/sources_1/new/opcodeFSM.v:23]
+INFO: [Synth 8-6157] synthesizing module 'reg3' [C:/Users/sunkg/OneDrive/Desktop/Binghamton/Semester 3/DLD/Final/Verilog/Custom Verilog/reg3.v:22]
+INFO: [Synth 8-6157] synthesizing module 'dff_en' [C:/Users/sunkg/OneDrive/Desktop/Binghamton/Semester 3/DLD/Final/Verilog/dff_en.v:4]
+INFO: [Synth 8-6155] done synthesizing module 'dff_en' (0#1) [C:/Users/sunkg/OneDrive/Desktop/Binghamton/Semester 3/DLD/Final/Verilog/dff_en.v:4]
+INFO: [Synth 8-6155] done synthesizing module 'reg3' (0#1) [C:/Users/sunkg/OneDrive/Desktop/Binghamton/Semester 3/DLD/Final/Verilog/Custom Verilog/reg3.v:22]
+INFO: [Synth 8-6157] synthesizing module 'nextStateLogic' [C:/Users/sunkg/OneDrive/Desktop/Binghamton/Semester 3/DLD/Final/Verilog/Custom Verilog/Opcode FSM/nextStateLogic.v:1]
+INFO: [Synth 8-6157] synthesizing module 'decoder' [C:/Users/sunkg/OneDrive/Desktop/Binghamton/Semester 3/DLD/Final/Verilog/decoder.v:1]
+	Parameter NUM_SEL bound to: 3 - type: integer 
+	Parameter NUM_OUTPUT bound to: 1 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'decoder' (0#1) [C:/Users/sunkg/OneDrive/Desktop/Binghamton/Semester 3/DLD/Final/Verilog/decoder.v:1]
+WARNING: [Synth 8-315] illegal expression in output port connection [C:/Users/sunkg/OneDrive/Desktop/Binghamton/Semester 3/DLD/Final/Verilog/Custom Verilog/Opcode FSM/nextStateLogic.v:14]
+INFO: [Synth 8-6155] done synthesizing module 'nextStateLogic' (0#1) [C:/Users/sunkg/OneDrive/Desktop/Binghamton/Semester 3/DLD/Final/Verilog/Custom Verilog/Opcode FSM/nextStateLogic.v:1]
+INFO: [Synth 8-6157] synthesizing module 'opcodeLogic' [C:/Users/sunkg/OneDrive/Desktop/Binghamton/Semester 3/DLD/Final/Verilog/Custom Verilog/Opcode FSM/opcodeLogic.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'opcodeLogic' (0#1) [C:/Users/sunkg/OneDrive/Desktop/Binghamton/Semester 3/DLD/Final/Verilog/Custom Verilog/Opcode FSM/opcodeLogic.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'opcodeFSM' (0#1) [C:/Users/sunkg/OneDrive/Desktop/Binghamton/Semester 3/DLD/Final/project_1/project_1.srcs/sources_1/new/opcodeFSM.v:23]
+WARNING: [Synth 8-7071] port 'currentState' of module 'opcodeFSM' is unconnected for instance 'fsm0' [C:/Users/sunkg/OneDrive/Desktop/Binghamton/Semester 3/DLD/Final/project_1/project_1.srcs/sources_1/new/testFSM.v:79]
+WARNING: [Synth 8-7023] instance 'fsm0' of module 'opcodeFSM' has 7 connections declared, but only 6 given [C:/Users/sunkg/OneDrive/Desktop/Binghamton/Semester 3/DLD/Final/project_1/project_1.srcs/sources_1/new/testFSM.v:79]
+INFO: [Synth 8-6157] synthesizing module 'MFR' [C:/Users/sunkg/OneDrive/Desktop/Binghamton/Semester 3/DLD/Final/project_1/project_1.srcs/sources_1/new/MFR.v:23]
+INFO: [Synth 8-6157] synthesizing module 'reg32' [C:/Users/sunkg/OneDrive/Desktop/Binghamton/Semester 3/DLD/Final/project_1/project_1.srcs/sources_1/new/reg32.v:23]
+INFO: [Synth 8-6157] synthesizing module 'reg4' [C:/Users/sunkg/OneDrive/Desktop/Binghamton/Semester 3/DLD/Final/project_1/project_1.srcs/sources_1/imports/Custom Verilog/reg4.v:22]
+INFO: [Synth 8-6155] done synthesizing module 'reg4' (0#1) [C:/Users/sunkg/OneDrive/Desktop/Binghamton/Semester 3/DLD/Final/project_1/project_1.srcs/sources_1/imports/Custom Verilog/reg4.v:22]
+INFO: [Synth 8-6155] done synthesizing module 'reg32' (0#1) [C:/Users/sunkg/OneDrive/Desktop/Binghamton/Semester 3/DLD/Final/project_1/project_1.srcs/sources_1/new/reg32.v:23]
+INFO: [Synth 8-6157] synthesizing module 'ALU' [C:/Users/sunkg/OneDrive/Desktop/Binghamton/Semester 3/DLD/Final/project_1/project_1.srcs/sources_1/new/ALU.v:23]
+INFO: [Synth 8-6157] synthesizing module 'adder16bit' [C:/Users/sunkg/OneDrive/Desktop/Binghamton/Semester 3/DLD/Final/project_1/project_1.srcs/sources_1/new/adder16bit.v:23]
+INFO: [Synth 8-6157] synthesizing module 'adder4bit' [C:/Users/sunkg/OneDrive/Desktop/Binghamton/Semester 3/DLD/Final/project_1/project_1.srcs/sources_1/new/adder4bit.v:23]
+INFO: [Synth 8-6157] synthesizing module 'full_adder' [C:/Users/sunkg/OneDrive/Desktop/Binghamton/Semester 3/DLD/Final/Verilog/Custom Verilog/ALU/full_adder.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'full_adder' (0#1) [C:/Users/sunkg/OneDrive/Desktop/Binghamton/Semester 3/DLD/Final/Verilog/Custom Verilog/ALU/full_adder.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'adder4bit' (0#1) [C:/Users/sunkg/OneDrive/Desktop/Binghamton/Semester 3/DLD/Final/project_1/project_1.srcs/sources_1/new/adder4bit.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'adder16bit' (0#1) [C:/Users/sunkg/OneDrive/Desktop/Binghamton/Semester 3/DLD/Final/project_1/project_1.srcs/sources_1/new/adder16bit.v:23]
+WARNING: [Synth 8-7071] port 'c_in' of module 'adder16bit' is unconnected for instance 'add0' [C:/Users/sunkg/OneDrive/Desktop/Binghamton/Semester 3/DLD/Final/project_1/project_1.srcs/sources_1/new/ALU.v:33]
+WARNING: [Synth 8-7071] port 'c_out' of module 'adder16bit' is unconnected for instance 'add0' [C:/Users/sunkg/OneDrive/Desktop/Binghamton/Semester 3/DLD/Final/project_1/project_1.srcs/sources_1/new/ALU.v:33]
+WARNING: [Synth 8-7023] instance 'add0' of module 'adder16bit' has 5 connections declared, but only 3 given [C:/Users/sunkg/OneDrive/Desktop/Binghamton/Semester 3/DLD/Final/project_1/project_1.srcs/sources_1/new/ALU.v:33]
+INFO: [Synth 8-6157] synthesizing module 'subtractor16bit' [C:/Users/sunkg/OneDrive/Desktop/Binghamton/Semester 3/DLD/Final/project_1/project_1.srcs/sources_1/new/subtractor16bit.v:23]
+WARNING: [Synth 8-7071] port 'c_out' of module 'adder16bit' is unconnected for instance 'ad1' [C:/Users/sunkg/OneDrive/Desktop/Binghamton/Semester 3/DLD/Final/project_1/project_1.srcs/sources_1/new/subtractor16bit.v:46]
+WARNING: [Synth 8-7023] instance 'ad1' of module 'adder16bit' has 5 connections declared, but only 4 given [C:/Users/sunkg/OneDrive/Desktop/Binghamton/Semester 3/DLD/Final/project_1/project_1.srcs/sources_1/new/subtractor16bit.v:46]
+INFO: [Synth 8-6157] synthesizing module 'multibit_mux' [C:/Users/sunkg/OneDrive/Desktop/Binghamton/Semester 3/DLD/Final/project_1/project_1.srcs/sources_1/imports/Downloads/multibit_mux.v:23]
+	Parameter NUM_INPUTS bound to: 2 - type: integer 
+	Parameter BUS_WIDTH bound to: 16 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'multibit_mux' (0#1) [C:/Users/sunkg/OneDrive/Desktop/Binghamton/Semester 3/DLD/Final/project_1/project_1.srcs/sources_1/imports/Downloads/multibit_mux.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'subtractor16bit' (0#1) [C:/Users/sunkg/OneDrive/Desktop/Binghamton/Semester 3/DLD/Final/project_1/project_1.srcs/sources_1/new/subtractor16bit.v:23]
+WARNING: [Synth 8-7071] port 'c_out' of module 'subtractor16bit' is unconnected for instance 'sub0' [C:/Users/sunkg/OneDrive/Desktop/Binghamton/Semester 3/DLD/Final/project_1/project_1.srcs/sources_1/new/ALU.v:39]
+WARNING: [Synth 8-7023] instance 'sub0' of module 'subtractor16bit' has 4 connections declared, but only 3 given [C:/Users/sunkg/OneDrive/Desktop/Binghamton/Semester 3/DLD/Final/project_1/project_1.srcs/sources_1/new/ALU.v:39]
+INFO: [Synth 8-6157] synthesizing module 'multiplier16bit' [C:/Users/sunkg/OneDrive/Desktop/Binghamton/Semester 3/DLD/Final/project_1/project_1.srcs/sources_1/new/multiplier16bit.v:23]
+INFO: [Synth 8-6157] synthesizing module 'mult16x1' [C:/Users/sunkg/OneDrive/Desktop/Binghamton/Semester 3/DLD/Final/project_1/project_1.srcs/sources_1/new/mult16x1.v:23]
+INFO: [Synth 8-6157] synthesizing module 'multiplier1bit' [C:/Users/sunkg/OneDrive/Desktop/Binghamton/Semester 3/DLD/Final/project_1/project_1.srcs/sources_1/new/multiplier1bit.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'multiplier1bit' (0#1) [C:/Users/sunkg/OneDrive/Desktop/Binghamton/Semester 3/DLD/Final/project_1/project_1.srcs/sources_1/new/multiplier1bit.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'mult16x1' (0#1) [C:/Users/sunkg/OneDrive/Desktop/Binghamton/Semester 3/DLD/Final/project_1/project_1.srcs/sources_1/new/mult16x1.v:23]
+WARNING: [Synth 8-7071] port 'sum_in' of module 'mult16x1' is unconnected for instance 'm0' [C:/Users/sunkg/OneDrive/Desktop/Binghamton/Semester 3/DLD/Final/project_1/project_1.srcs/sources_1/new/multiplier16bit.v:31]
+WARNING: [Synth 8-7071] port 'c_in' of module 'mult16x1' is unconnected for instance 'm0' [C:/Users/sunkg/OneDrive/Desktop/Binghamton/Semester 3/DLD/Final/project_1/project_1.srcs/sources_1/new/multiplier16bit.v:31]
+WARNING: [Synth 8-7023] instance 'm0' of module 'mult16x1' has 6 connections declared, but only 4 given [C:/Users/sunkg/OneDrive/Desktop/Binghamton/Semester 3/DLD/Final/project_1/project_1.srcs/sources_1/new/multiplier16bit.v:31]
+INFO: [Synth 8-6155] done synthesizing module 'multiplier16bit' (0#1) [C:/Users/sunkg/OneDrive/Desktop/Binghamton/Semester 3/DLD/Final/project_1/project_1.srcs/sources_1/new/multiplier16bit.v:23]
+INFO: [Synth 8-6157] synthesizing module 'multibit_mux__parameterized0' [C:/Users/sunkg/OneDrive/Desktop/Binghamton/Semester 3/DLD/Final/project_1/project_1.srcs/sources_1/imports/Downloads/multibit_mux.v:23]
+	Parameter NUM_INPUTS bound to: 8 - type: integer 
+	Parameter BUS_WIDTH bound to: 32 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'multibit_mux__parameterized0' (0#1) [C:/Users/sunkg/OneDrive/Desktop/Binghamton/Semester 3/DLD/Final/project_1/project_1.srcs/sources_1/imports/Downloads/multibit_mux.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'ALU' (0#1) [C:/Users/sunkg/OneDrive/Desktop/Binghamton/Semester 3/DLD/Final/project_1/project_1.srcs/sources_1/new/ALU.v:23]
+WARNING: [Synth 8-689] width (48) of port connection 'L' does not match port width (32) of module 'ALU' [C:/Users/sunkg/OneDrive/Desktop/Binghamton/Semester 3/DLD/Final/project_1/project_1.srcs/sources_1/new/MFR.v:40]
+INFO: [Synth 8-6155] done synthesizing module 'MFR' (0#1) [C:/Users/sunkg/OneDrive/Desktop/Binghamton/Semester 3/DLD/Final/project_1/project_1.srcs/sources_1/new/MFR.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'testFSM' (0#1) [C:/Users/sunkg/OneDrive/Desktop/Binghamton/Semester 3/DLD/Final/project_1/project_1.srcs/sources_1/new/testFSM.v:44]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 1286.637 ; gain = 601.543
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 1286.637 ; gain = 601.543
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 1286.637 ; gain = 601.543
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.013 . Memory (MB): peak = 1286.637 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [C:/Users/sunkg/OneDrive/Desktop/Binghamton/Semester 3/DLD/Final/project_1/project_1.srcs/constrs_1/new/const.xdc]
+WARNING: [Vivado 12-584] No ports matched 'btnD'. [C:/Users/sunkg/OneDrive/Desktop/Binghamton/Semester 3/DLD/Final/project_1/project_1.srcs/constrs_1/new/const.xdc:119]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/sunkg/OneDrive/Desktop/Binghamton/Semester 3/DLD/Final/project_1/project_1.srcs/constrs_1/new/const.xdc:119]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'btnD'. [C:/Users/sunkg/OneDrive/Desktop/Binghamton/Semester 3/DLD/Final/project_1/project_1.srcs/constrs_1/new/const.xdc:120]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/sunkg/OneDrive/Desktop/Binghamton/Semester 3/DLD/Final/project_1/project_1.srcs/constrs_1/new/const.xdc:120]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+Finished Parsing XDC File [C:/Users/sunkg/OneDrive/Desktop/Binghamton/Semester 3/DLD/Final/project_1/project_1.srcs/constrs_1/new/const.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/sunkg/OneDrive/Desktop/Binghamton/Semester 3/DLD/Final/project_1/project_1.srcs/constrs_1/new/const.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/testFSM_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/testFSM_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 1364.645 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.005 . Memory (MB): peak = 1364.645 ; gain = 0.000
+INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
+INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 1364.645 ; gain = 679.551
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a35tcpg236-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 1364.645 ; gain = 679.551
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 1364.645 ; gain = 679.551
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 1364.645 ; gain = 679.551
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---XORs : 
+	   3 Input      1 Bit         XORs := 304   
++---Registers : 
+	                1 Bit    Registers := 47    
++---Muxes : 
+	   2 Input   16 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 90 (col length:60)
+BRAMs: 100 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:18 ; elapsed = 00:00:19 . Memory (MB): peak = 1439.449 ; gain = 754.355
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:22 ; elapsed = 00:00:23 . Memory (MB): peak = 1504.980 ; gain = 819.887
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:25 ; elapsed = 00:00:26 . Memory (MB): peak = 1616.867 ; gain = 931.773
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:25 ; elapsed = 00:00:26 . Memory (MB): peak = 1634.969 ; gain = 949.875
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:27 ; elapsed = 00:00:29 . Memory (MB): peak = 1760.656 ; gain = 1075.562
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:27 ; elapsed = 00:00:29 . Memory (MB): peak = 1760.656 ; gain = 1075.562
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:27 ; elapsed = 00:00:29 . Memory (MB): peak = 1760.656 ; gain = 1075.562
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:27 ; elapsed = 00:00:29 . Memory (MB): peak = 1760.656 ; gain = 1075.562
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:27 ; elapsed = 00:00:29 . Memory (MB): peak = 1760.656 ; gain = 1075.562
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:27 ; elapsed = 00:00:29 . Memory (MB): peak = 1760.656 ; gain = 1075.562
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-------+------+
+|      |Cell   |Count |
++------+-------+------+
+|1     |BUFG   |     1|
+|2     |CARRY4 |    16|
+|3     |LUT1   |     8|
+|4     |LUT2   |    86|
+|5     |LUT3   |    13|
+|6     |LUT4   |    82|
+|7     |LUT5   |    32|
+|8     |LUT6   |   169|
+|9     |MUXF7  |    11|
+|10    |FDRE   |    95|
+|11    |IBUF   |    21|
+|12    |OBUF   |    16|
++------+-------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:27 ; elapsed = 00:00:29 . Memory (MB): peak = 1760.656 ; gain = 1075.562
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 1 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:21 ; elapsed = 00:00:27 . Memory (MB): peak = 1760.656 ; gain = 997.555
+Synthesis Optimization Complete : Time (s): cpu = 00:00:27 ; elapsed = 00:00:29 . Memory (MB): peak = 1760.656 ; gain = 1075.562
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.006 . Memory (MB): peak = 1770.840 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 27 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1774.523 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Synth Design complete | Checksum: 48b07cf3
+INFO: [Common 17-83] Releasing license: Synthesis
+63 Infos, 29 Warnings, 2 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:31 ; elapsed = 00:00:33 . Memory (MB): peak = 1774.523 ; gain = 1276.539
+INFO: [runtcl-6] Synthesis results are not added to the cache due to CRITICAL_WARNING
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1774.523 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'C:/Users/sunkg/OneDrive/Desktop/Binghamton/Semester 3/DLD/Final/project_1/project_1.runs/synth_1/testFSM.dcp' has been generated.
+INFO: [Vivado 12-24828] Executing command : report_utilization -file testFSM_utilization_synth.rpt -pb testFSM_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Fri Dec  5 14:33:26 2025...

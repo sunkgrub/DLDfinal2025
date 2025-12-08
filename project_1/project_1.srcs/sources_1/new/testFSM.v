@@ -44,10 +44,13 @@
 module testFSM(
 
 input btnU, btnC, btnL, btnR, clk,
+input [15:0] sw,
 output [15:0] led
     );
    
 wire uW, cW, lW, rW;
+wire [31:0] outW;
+wire [2:0] opW;
    
 debouncer dbU(
     .clk(clk),
@@ -79,8 +82,16 @@ opcodeFSM fsm0(
     .sub(cW),
     .mult(rW),
     .clk(clk),
-    .opcode(led[2:0]),
-    .currentState(led[15:13])
+    .opcode(opW)
 );
+
+MFR mfr0(
+.in(sw),
+.op(opW),
+.clk(clk),
+.out(outW)
+);
+
+assign led = outW[15:0];
 
 endmodule

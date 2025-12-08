@@ -43,6 +43,6 @@ EAStep()
 
 # pre-commands:
 /bin/touch .init_design.begin.rst
-EAStep vivado -log arithmeticTest.vdi -applog -m64 -product Vivado -messageDb vivado.pb -mode batch -source arithmeticTest.tcl -notrace
+EAStep vivado -log testFSM.vdi -applog -m64 -product Vivado -messageDb vivado.pb -mode batch -source testFSM.tcl -notrace
 
 
