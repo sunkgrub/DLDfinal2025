@@ -3,11 +3,11 @@
 # SW Build 6140274 on Thu May 22 00:12:29 MDT 2025
 # IP Build 6138677 on Thu May 22 03:10:11 MDT 2025
 # SharedData Build 6139179 on Tue May 20 17:58:58 MDT 2025
-# Start of session at: Fri Dec  5 14:33:32 2025
-# Process ID         : 28768
+# Start of session at: Mon Dec  8 18:46:46 2025
+# Process ID         : 1296
 # Current directory  : C:/Users/sunkg/OneDrive/Desktop/Binghamton/Semester 3/DLD/Final/project_1/project_1.runs/impl_1
-# Command line       : vivado.exe -log testFSM.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source testFSM.tcl -notrace
-# Log file           : C:/Users/sunkg/OneDrive/Desktop/Binghamton/Semester 3/DLD/Final/project_1/project_1.runs/impl_1/testFSM.vdi
+# Command line       : vivado.exe -log final.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source final.tcl -notrace
+# Log file           : C:/Users/sunkg/OneDrive/Desktop/Binghamton/Semester 3/DLD/Final/project_1/project_1.runs/impl_1/final.vdi
 # Journal file       : C:/Users/sunkg/OneDrive/Desktop/Binghamton/Semester 3/DLD/Final/project_1/project_1.runs/impl_1\vivado.jou
 # Running On         : Alienware-M16R2
 # Platform           : Windows Server 2016 or Windows 10
@@ -19,6 +19,6 @@
 # Host memory        : 33844 MB
 # Swap memory        : 9126 MB
 # Total Virtual      : 42971 MB
-# Available Virtual  : 16286 MB
+# Available Virtual  : 7781 MB
 #-----------------------------------------------------------
-source testFSM.tcl -notrace
+source final.tcl -notrace

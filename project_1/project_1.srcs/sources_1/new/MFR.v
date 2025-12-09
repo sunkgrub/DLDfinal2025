@@ -37,7 +37,7 @@ reg32 rg0(
 );
 
 ALU alu0(
-.L({0,in}),
+.L({16'b0,in}),
 .R(storeW),
 .op(op),
 .out(aluW)
