@@ -1,0 +1,13 @@
++====================+===================+=================================+
+| Launch Setup Clock | Launch Hold Clock | Pin                             |
++====================+===================+=================================+
+| sys_clk_pin        | sys_clk_pin       | mfr0/rg0/rg6/U16/data_out_reg/D |
+| sys_clk_pin        | sys_clk_pin       | mfr0/rg0/rg7/U17/data_out_reg/D |
+| sys_clk_pin        | sys_clk_pin       | mfr0/rg0/rg6/U15/data_out_reg/D |
+| sys_clk_pin        | sys_clk_pin       | mfr0/rg0/rg5/U17/data_out_reg/D |
+| sys_clk_pin        | sys_clk_pin       | mfr0/rg0/rg5/U15/data_out_reg/D |
+| sys_clk_pin        | sys_clk_pin       | mfr0/rg0/rg4/U15/data_out_reg/D |
+| sys_clk_pin        | sys_clk_pin       | mfr0/rg0/rg4/U17/data_out_reg/D |
+| sys_clk_pin        | sys_clk_pin       | mfr0/rg0/rg4/U18/data_out_reg/D |
+| sys_clk_pin        | sys_clk_pin       | mfr0/rg0/rg3/U16/data_out_reg/D |
++--------------------+-------------------+---------------------------------+

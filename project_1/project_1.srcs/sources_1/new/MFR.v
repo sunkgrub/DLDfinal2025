@@ -24,7 +24,8 @@ module MFR(
 input [15:0] in,
 input [2:0] op,
 input clk,
-output [31:0] out
+output [31:0] out,
+output [15:0] led
     );
    
 wire [31:0] storeW, aluW;
@@ -40,8 +41,12 @@ ALU alu0(
 .L({16'b0,in}),
 .R(storeW),
 .op(op),
-.out(aluW)
+.out(aluW),
+.clk(clk),
+.led(led)
 );
+    
+
     
 assign out = storeW;
 

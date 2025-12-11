@@ -70,7 +70,8 @@ MFR mfr0(
 .in(sw),
 .op(opW),
 .clk(clk),
-.out(outW)
+.out(outW),
+.led(led)
 );
 
 topScrollHex scroll0(

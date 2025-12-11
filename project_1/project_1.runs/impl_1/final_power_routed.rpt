@@ -1,7 +1,7 @@
 Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
 -------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version     : Vivado v.2025.1 (win64) Build 6140274 Thu May 22 00:12:29 MDT 2025
-| Date             : Mon Dec  8 18:47:32 2025
+| Date             : Tue Dec  9 14:59:17 2025
 | Host             : Alienware-M16R2 running 64-bit major release  (build 9200)
 | Command          : report_power -file final_power_routed.rpt -pb final_power_summary_routed.pb -rpx final_power_routed.rpx
 | Design           : final
@@ -30,10 +30,10 @@ Table of Contents
 ----------
 
 +--------------------------+--------------+
-| Total On-Chip Power (W)  | 0.095        |
+| Total On-Chip Power (W)  | 0.098        |
 | Design Power Budget (W)  | Unspecified* |
 | Power Budget Margin (W)  | NA           |
-| Dynamic (W)              | 0.023        |
+| Dynamic (W)              | 0.027        |
 | Device Static (W)        | 0.072        |
 | Effective TJA (C/W)      | 5.0          |
 | Max Ambient (C)          | 84.5         |
@@ -53,16 +53,16 @@ Table of Contents
 | On-Chip        | Power (W) | Used     | Available | Utilization (%) |
 +----------------+-----------+----------+-----------+-----------------+
 | Clocks         |     0.002 |        3 |       --- |             --- |
-| Slice Logic    |     0.007 |      997 |       --- |             --- |
-|   LUT as Logic |     0.007 |      591 |     20800 |            2.84 |
+| Slice Logic    |     0.008 |     1061 |       --- |             --- |
+|   LUT as Logic |     0.008 |      693 |     20800 |            3.33 |
 |   CARRY4       |    <0.001 |       20 |      8150 |            0.25 |
-|   Register     |    <0.001 |      146 |     41600 |            0.35 |
-|   F7/F8 Muxes  |    <0.001 |        5 |     32600 |            0.02 |
-|   Others       |     0.000 |      114 |       --- |             --- |
-| Signals        |     0.008 |      824 |       --- |             --- |
+|   Register     |    <0.001 |      152 |     41600 |            0.37 |
+|   F7/F8 Muxes  |    <0.001 |       15 |     32600 |            0.05 |
+|   Others       |     0.000 |      116 |       --- |             --- |
+| Signals        |     0.011 |      869 |       --- |             --- |
 | I/O            |     0.007 |       49 |       106 |           46.23 |
 | Static Power   |     0.072 |          |           |                 |
-| Total          |     0.095 |          |           |                 |
+| Total          |     0.098 |          |           |                 |
 +----------------+-----------+----------+-----------+-----------------+
 
 
@@ -72,7 +72,7 @@ Table of Contents
 +-----------+-------------+-----------+-------------+------------+-------------+-------------+------------+
 | Source    | Voltage (V) | Total (A) | Dynamic (A) | Static (A) | Powerup (A) | Budget (A)  | Margin (A) |
 +-----------+-------------+-----------+-------------+------------+-------------+-------------+------------+
-| Vccint    |       1.000 |     0.026 |       0.017 |      0.010 |       NA    | Unspecified | NA         |
+| Vccint    |       1.000 |     0.030 |       0.020 |      0.010 |       NA    | Unspecified | NA         |
 | Vccaux    |       1.800 |     0.013 |       0.000 |      0.013 |       NA    | Unspecified | NA         |
 | Vcco33    |       3.300 |     0.003 |       0.002 |      0.001 |       NA    | Unspecified | NA         |
 | Vcco25    |       2.500 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
@@ -141,12 +141,13 @@ Table of Contents
 +-----------+-----------+
 | Name      | Power (W) |
 +-----------+-----------+
-| final     |     0.023 |
-|   mfr0    |     0.014 |
-|     rg0   |     0.014 |
-|       rg0 |     0.005 |
-|       rg1 |     0.003 |
+| final     |     0.027 |
+|   mfr0    |     0.017 |
+|     rg0   |     0.017 |
+|       rg0 |     0.004 |
+|       rg1 |     0.005 |
 |       rg2 |     0.005 |
+|       rg3 |     0.003 |
 +-----------+-----------+
 
 

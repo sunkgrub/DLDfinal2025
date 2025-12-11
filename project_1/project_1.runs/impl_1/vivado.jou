@@ -3,8 +3,8 @@
 # SW Build 6140274 on Thu May 22 00:12:29 MDT 2025
 # IP Build 6138677 on Thu May 22 03:10:11 MDT 2025
 # SharedData Build 6139179 on Tue May 20 17:58:58 MDT 2025
-# Start of session at: Mon Dec  8 18:46:46 2025
-# Process ID         : 1296
+# Start of session at: Tue Dec  9 14:57:54 2025
+# Process ID         : 31636
 # Current directory  : C:/Users/sunkg/OneDrive/Desktop/Binghamton/Semester 3/DLD/Final/project_1/project_1.runs/impl_1
 # Command line       : vivado.exe -log final.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source final.tcl -notrace
 # Log file           : C:/Users/sunkg/OneDrive/Desktop/Binghamton/Semester 3/DLD/Final/project_1/project_1.runs/impl_1/final.vdi
@@ -17,8 +17,8 @@
 # CPU Physical cores : 16
 # CPU Logical cores  : 22
 # Host memory        : 33844 MB
-# Swap memory        : 9126 MB
-# Total Virtual      : 42971 MB
-# Available Virtual  : 7781 MB
+# Swap memory        : 11289 MB
+# Total Virtual      : 45134 MB
+# Available Virtual  : 4364 MB
 #-----------------------------------------------------------
 source final.tcl -notrace

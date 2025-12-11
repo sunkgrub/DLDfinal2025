@@ -24,7 +24,8 @@ module subtractor16bit(
     input [15:0] A,
     input [15:0] B,
     output [15:0] D,
-    output c_out
+    output c_out,
+    output neg
 );
 
 wire [15:0] notB;
@@ -49,6 +50,8 @@ adder16bit ad1(
     .c_in(1'b1),
     .S(negW)
 );
+
+assign neg = diffW[15];
 
 multibit_mux #(.NUM_INPUTS(2), .BUS_WIDTH(16)) MBMUX (
 .data_out(D),

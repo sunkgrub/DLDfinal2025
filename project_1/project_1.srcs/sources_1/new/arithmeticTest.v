@@ -27,12 +27,12 @@ module arithmeticTest(
   
 wire [31:0] productW;
   
-multiplier16bit a0(
-    .A(16'h3A7C),
-    .B(16'h12F5),
+multiplier16bit2 a0(
+    .A(16'h7918),
+    .B(16'hFA00),
     .P(productW)
 );
 
-assign led = productW[31:16];
+assign led = productW[15:0];
 
 endmodule

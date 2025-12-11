@@ -108,7 +108,7 @@ set rc [catch {
   create_msg_db init_design.pb
   set_param chipscope.maxJobs 5
   set_param general.usePosixSpawnForFork 1
-  set_param synth.incrementalSynthesisCache C:/Users/sunkg/AppData/Roaming/Xilinx/Vivado/.Xil/Vivado-15864-Alienware-M16R2/incrSyn
+  set_param synth.incrementalSynthesisCache C:/Users/sunkg/AppData/Roaming/Xilinx/Vivado/.Xil/Vivado-12992-Alienware-M16R2/incrSyn
   set_param checkpoint.writeSynthRtdsInDcp 1
   set_param xicom.use_bs_reader 1
   set_param runs.launchOptions { -jobs 22  }

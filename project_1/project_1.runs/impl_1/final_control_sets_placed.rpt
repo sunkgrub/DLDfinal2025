@@ -1,7 +1,7 @@
 Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
 ---------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2025.1 (win64) Build 6140274 Thu May 22 00:12:29 MDT 2025
-| Date         : Mon Dec  8 18:47:09 2025
+| Date         : Tue Dec  9 14:58:25 2025
 | Host         : Alienware-M16R2 running 64-bit major release  (build 9200)
 | Command      : report_control_sets -verbose -file final_control_sets_placed.rpt
 | Design       : final
@@ -27,7 +27,7 @@ Table of Contents
 |    Minimum number of control sets                        |     6 |
 |    Addition due to synthesis replication                 |     0 |
 |    Addition due to physical synthesis replication        |     0 |
-| Unused register locations in slices containing registers |     6 |
+| Unused register locations in slices containing registers |     5 |
 +----------------------------------------------------------+-------+
 * Control sets can be merged at opt_design using control_set_merge or merge_equivalent_drivers
 ** Run report_qor_suggestions for automated merging and remapping suggestions
@@ -58,7 +58,7 @@ Table of Contents
 +--------------+-----------------------+------------------------+-----------------+--------------+
 | Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
 +--------------+-----------------------+------------------------+-----------------+--------------+
-| No           | No                    | No                     |              66 |           41 |
+| No           | No                    | No                     |              67 |           41 |
 | No           | No                    | Yes                    |               0 |            0 |
 | No           | Yes                   | No                     |              80 |           20 |
 | Yes          | No                    | No                     |               0 |            0 |
@@ -70,15 +70,15 @@ Table of Contents
 4. Detailed Control Set Information
 -----------------------------------
 
-+----------------+---------------+---------------------------------------+------------------+----------------+--------------+
-|  Clock Signal  | Enable Signal |            Set/Reset Signal           | Slice Load Count | Bel Load Count | Bels / Slice |
-+----------------+---------------+---------------------------------------+------------------+----------------+--------------+
-|  clk_IBUF_BUFG |               | dbC/PB_cnt[0]_i_1__0_n_0              |                4 |             16 |         4.00 |
-|  clk_IBUF_BUFG |               | dbL/PB_cnt[0]_i_1__1_n_0              |                4 |             16 |         4.00 |
-|  clk_IBUF_BUFG |               | dbR/PB_cnt[0]_i_1__2_n_0              |                4 |             16 |         4.00 |
-|  clk_IBUF_BUFG |               | dbU/PB_cnt[0]_i_1_n_0                 |                4 |             16 |         4.00 |
-|  clk_IBUF_BUFG |               | scroll0/sFSM/dbD/PB_cnt[0]_i_1__3_n_0 |                4 |             16 |         4.00 |
-|  clk_IBUF_BUFG |               |                                       |               41 |             66 |         1.61 |
-+----------------+---------------+---------------------------------------+------------------+----------------+--------------+
++----------------+---------------+--------------------------+------------------+----------------+--------------+
+|  Clock Signal  | Enable Signal |     Set/Reset Signal     | Slice Load Count | Bel Load Count | Bels / Slice |
++----------------+---------------+--------------------------+------------------+----------------+--------------+
+|  clk_IBUF_BUFG |               | dbC/PB_idle              |                4 |             16 |         4.00 |
+|  clk_IBUF_BUFG |               | dbL/PB_idle              |                4 |             16 |         4.00 |
+|  clk_IBUF_BUFG |               | dbR/PB_idle              |                4 |             16 |         4.00 |
+|  clk_IBUF_BUFG |               | dbU/PB_idle              |                4 |             16 |         4.00 |
+|  clk_IBUF_BUFG |               | scroll0/sFSM/dbD/PB_idle |                4 |             16 |         4.00 |
+|  clk_IBUF_BUFG |               |                          |               41 |             67 |         1.63 |
++----------------+---------------+--------------------------+------------------+----------------+--------------+
 
 

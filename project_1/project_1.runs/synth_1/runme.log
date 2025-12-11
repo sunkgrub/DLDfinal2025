@@ -8,7 +8,22 @@
   **** SW Build 6140274 on Thu May 22 00:12:29 MDT 2025
   **** IP Build 6138677 on Thu May 22 03:10:11 MDT 2025
   **** SharedData Build 6139179 on Tue May 20 17:58:58 MDT 2025
-  **** Start of session at: Mon Dec  8 18:45:49 2025
+  **** Start of session at: Tue Dec  9 14:56:28 2025
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+    ** Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
+
+source final.tcl -notrace
+
+*** Running vivado
+    with args -log final.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source final.tcl
+
+
+
+****** Vivado v2025.1 (64-bit)
+  **** SW Build 6140274 on Thu May 22 00:12:29 MDT 2025
+  **** IP Build 6138677 on Thu May 22 03:10:11 MDT 2025
+  **** SharedData Build 6139179 on Tue May 20 17:58:58 MDT 2025
+  **** Start of session at: Tue Dec  9 14:56:56 2025
     ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
     ** Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
 
@@ -25,9 +40,9 @@ INFO: [Designutils 20-5440] No compile time benefit to using incremental synthes
 INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
 INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
 INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
-INFO: [Synth 8-7075] Helper process launched with PID 26288
+INFO: [Synth 8-7075] Helper process launched with PID 5816
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 1179.691 ; gain = 494.980
+Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 1179.625 ; gain = 495.629
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-6157] synthesizing module 'final' [C:/Users/sunkg/OneDrive/Desktop/Binghamton/Semester 3/DLD/Final/project_1/project_1.srcs/sources_1/new/final.v:23]
 INFO: [Synth 8-6157] synthesizing module 'debouncer' [C:/Users/sunkg/Downloads/debouncer.v:3]
@@ -73,28 +88,67 @@ INFO: [Synth 8-6157] synthesizing module 'full_adder' [C:/Users/sunkg/OneDrive/D
 INFO: [Synth 8-6155] done synthesizing module 'full_adder' (0#1) [C:/Users/sunkg/OneDrive/Desktop/Binghamton/Semester 3/DLD/Final/Verilog/Custom Verilog/ALU/full_adder.v:23]
 INFO: [Synth 8-6155] done synthesizing module 'adder4bit' (0#1) [C:/Users/sunkg/OneDrive/Desktop/Binghamton/Semester 3/DLD/Final/project_1/project_1.srcs/sources_1/new/adder4bit.v:23]
 INFO: [Synth 8-6155] done synthesizing module 'adder16bit' (0#1) [C:/Users/sunkg/OneDrive/Desktop/Binghamton/Semester 3/DLD/Final/project_1/project_1.srcs/sources_1/new/adder16bit.v:23]
-WARNING: [Synth 8-7071] port 'c_in' of module 'adder16bit' is unconnected for instance 'add0' [C:/Users/sunkg/OneDrive/Desktop/Binghamton/Semester 3/DLD/Final/project_1/project_1.srcs/sources_1/new/ALU.v:33]
-WARNING: [Synth 8-7071] port 'c_out' of module 'adder16bit' is unconnected for instance 'add0' [C:/Users/sunkg/OneDrive/Desktop/Binghamton/Semester 3/DLD/Final/project_1/project_1.srcs/sources_1/new/ALU.v:33]
-WARNING: [Synth 8-7023] instance 'add0' of module 'adder16bit' has 5 connections declared, but only 3 given [C:/Users/sunkg/OneDrive/Desktop/Binghamton/Semester 3/DLD/Final/project_1/project_1.srcs/sources_1/new/ALU.v:33]
+WARNING: [Synth 8-7071] port 'c_in' of module 'adder16bit' is unconnected for instance 'add0' [C:/Users/sunkg/OneDrive/Desktop/Binghamton/Semester 3/DLD/Final/project_1/project_1.srcs/sources_1/new/ALU.v:36]
+WARNING: [Synth 8-7023] instance 'add0' of module 'adder16bit' has 5 connections declared, but only 4 given [C:/Users/sunkg/OneDrive/Desktop/Binghamton/Semester 3/DLD/Final/project_1/project_1.srcs/sources_1/new/ALU.v:36]
 INFO: [Synth 8-6157] synthesizing module 'subtractor16bit' [C:/Users/sunkg/OneDrive/Desktop/Binghamton/Semester 3/DLD/Final/project_1/project_1.srcs/sources_1/new/subtractor16bit.v:23]
-WARNING: [Synth 8-7071] port 'c_out' of module 'adder16bit' is unconnected for instance 'ad1' [C:/Users/sunkg/OneDrive/Desktop/Binghamton/Semester 3/DLD/Final/project_1/project_1.srcs/sources_1/new/subtractor16bit.v:46]
-WARNING: [Synth 8-7023] instance 'ad1' of module 'adder16bit' has 5 connections declared, but only 4 given [C:/Users/sunkg/OneDrive/Desktop/Binghamton/Semester 3/DLD/Final/project_1/project_1.srcs/sources_1/new/subtractor16bit.v:46]
+WARNING: [Synth 8-7071] port 'c_out' of module 'adder16bit' is unconnected for instance 'ad1' [C:/Users/sunkg/OneDrive/Desktop/Binghamton/Semester 3/DLD/Final/project_1/project_1.srcs/sources_1/new/subtractor16bit.v:47]
+WARNING: [Synth 8-7023] instance 'ad1' of module 'adder16bit' has 5 connections declared, but only 4 given [C:/Users/sunkg/OneDrive/Desktop/Binghamton/Semester 3/DLD/Final/project_1/project_1.srcs/sources_1/new/subtractor16bit.v:47]
 INFO: [Synth 8-6157] synthesizing module 'multibit_mux' [C:/Users/sunkg/OneDrive/Desktop/Binghamton/Semester 3/DLD/Final/project_1/project_1.srcs/sources_1/imports/Downloads/multibit_mux.v:23]
 	Parameter NUM_INPUTS bound to: 2 - type: integer 
 	Parameter BUS_WIDTH bound to: 16 - type: integer 
 INFO: [Synth 8-6155] done synthesizing module 'multibit_mux' (0#1) [C:/Users/sunkg/OneDrive/Desktop/Binghamton/Semester 3/DLD/Final/project_1/project_1.srcs/sources_1/imports/Downloads/multibit_mux.v:23]
 INFO: [Synth 8-6155] done synthesizing module 'subtractor16bit' (0#1) [C:/Users/sunkg/OneDrive/Desktop/Binghamton/Semester 3/DLD/Final/project_1/project_1.srcs/sources_1/new/subtractor16bit.v:23]
-WARNING: [Synth 8-7071] port 'c_out' of module 'subtractor16bit' is unconnected for instance 'sub0' [C:/Users/sunkg/OneDrive/Desktop/Binghamton/Semester 3/DLD/Final/project_1/project_1.srcs/sources_1/new/ALU.v:39]
-WARNING: [Synth 8-7023] instance 'sub0' of module 'subtractor16bit' has 4 connections declared, but only 3 given [C:/Users/sunkg/OneDrive/Desktop/Binghamton/Semester 3/DLD/Final/project_1/project_1.srcs/sources_1/new/ALU.v:39]
-INFO: [Synth 8-6157] synthesizing module 'multiplier16bit' [C:/Users/sunkg/OneDrive/Desktop/Binghamton/Semester 3/DLD/Final/project_1/project_1.srcs/sources_1/new/multiplier16bit.v:23]
-INFO: [Synth 8-6157] synthesizing module 'mult16x1' [C:/Users/sunkg/OneDrive/Desktop/Binghamton/Semester 3/DLD/Final/project_1/project_1.srcs/sources_1/new/mult16x1.v:23]
-INFO: [Synth 8-6157] synthesizing module 'multiplier1bit' [C:/Users/sunkg/OneDrive/Desktop/Binghamton/Semester 3/DLD/Final/project_1/project_1.srcs/sources_1/new/multiplier1bit.v:23]
-INFO: [Synth 8-6155] done synthesizing module 'multiplier1bit' (0#1) [C:/Users/sunkg/OneDrive/Desktop/Binghamton/Semester 3/DLD/Final/project_1/project_1.srcs/sources_1/new/multiplier1bit.v:23]
-INFO: [Synth 8-6155] done synthesizing module 'mult16x1' (0#1) [C:/Users/sunkg/OneDrive/Desktop/Binghamton/Semester 3/DLD/Final/project_1/project_1.srcs/sources_1/new/mult16x1.v:23]
-WARNING: [Synth 8-7071] port 'sum_in' of module 'mult16x1' is unconnected for instance 'm0' [C:/Users/sunkg/OneDrive/Desktop/Binghamton/Semester 3/DLD/Final/project_1/project_1.srcs/sources_1/new/multiplier16bit.v:31]
-WARNING: [Synth 8-7071] port 'c_in' of module 'mult16x1' is unconnected for instance 'm0' [C:/Users/sunkg/OneDrive/Desktop/Binghamton/Semester 3/DLD/Final/project_1/project_1.srcs/sources_1/new/multiplier16bit.v:31]
-WARNING: [Synth 8-7023] instance 'm0' of module 'mult16x1' has 6 connections declared, but only 4 given [C:/Users/sunkg/OneDrive/Desktop/Binghamton/Semester 3/DLD/Final/project_1/project_1.srcs/sources_1/new/multiplier16bit.v:31]
-INFO: [Synth 8-6155] done synthesizing module 'multiplier16bit' (0#1) [C:/Users/sunkg/OneDrive/Desktop/Binghamton/Semester 3/DLD/Final/project_1/project_1.srcs/sources_1/new/multiplier16bit.v:23]
+WARNING: [Synth 8-7071] port 'c_out' of module 'subtractor16bit' is unconnected for instance 'sub0' [C:/Users/sunkg/OneDrive/Desktop/Binghamton/Semester 3/DLD/Final/project_1/project_1.srcs/sources_1/new/ALU.v:43]
+WARNING: [Synth 8-7023] instance 'sub0' of module 'subtractor16bit' has 5 connections declared, but only 4 given [C:/Users/sunkg/OneDrive/Desktop/Binghamton/Semester 3/DLD/Final/project_1/project_1.srcs/sources_1/new/ALU.v:43]
+INFO: [Synth 8-6157] synthesizing module 'multiplier16bit2' [C:/Users/sunkg/OneDrive/Desktop/Binghamton/Semester 3/DLD/Final/project_1/project_1.srcs/sources_1/new/multiplier16bit2.v:23]
+INFO: [Synth 8-6157] synthesizing module 'adder32' [C:/Users/sunkg/OneDrive/Desktop/Binghamton/Semester 3/DLD/Final/project_1/project_1.srcs/sources_1/new/adder32.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'adder32' (0#1) [C:/Users/sunkg/OneDrive/Desktop/Binghamton/Semester 3/DLD/Final/project_1/project_1.srcs/sources_1/new/adder32.v:23]
+WARNING: [Synth 8-7071] port 'c_in' of module 'adder32' is unconnected for instance 'a0' [C:/Users/sunkg/OneDrive/Desktop/Binghamton/Semester 3/DLD/Final/project_1/project_1.srcs/sources_1/new/multiplier16bit2.v:50]
+WARNING: [Synth 8-7071] port 'c_out' of module 'adder32' is unconnected for instance 'a0' [C:/Users/sunkg/OneDrive/Desktop/Binghamton/Semester 3/DLD/Final/project_1/project_1.srcs/sources_1/new/multiplier16bit2.v:50]
+WARNING: [Synth 8-7023] instance 'a0' of module 'adder32' has 5 connections declared, but only 3 given [C:/Users/sunkg/OneDrive/Desktop/Binghamton/Semester 3/DLD/Final/project_1/project_1.srcs/sources_1/new/multiplier16bit2.v:50]
+WARNING: [Synth 8-7071] port 'c_in' of module 'adder32' is unconnected for instance 'a1' [C:/Users/sunkg/OneDrive/Desktop/Binghamton/Semester 3/DLD/Final/project_1/project_1.srcs/sources_1/new/multiplier16bit2.v:51]
+WARNING: [Synth 8-7071] port 'c_out' of module 'adder32' is unconnected for instance 'a1' [C:/Users/sunkg/OneDrive/Desktop/Binghamton/Semester 3/DLD/Final/project_1/project_1.srcs/sources_1/new/multiplier16bit2.v:51]
+WARNING: [Synth 8-7023] instance 'a1' of module 'adder32' has 5 connections declared, but only 3 given [C:/Users/sunkg/OneDrive/Desktop/Binghamton/Semester 3/DLD/Final/project_1/project_1.srcs/sources_1/new/multiplier16bit2.v:51]
+WARNING: [Synth 8-7071] port 'c_in' of module 'adder32' is unconnected for instance 'a2' [C:/Users/sunkg/OneDrive/Desktop/Binghamton/Semester 3/DLD/Final/project_1/project_1.srcs/sources_1/new/multiplier16bit2.v:52]
+WARNING: [Synth 8-7071] port 'c_out' of module 'adder32' is unconnected for instance 'a2' [C:/Users/sunkg/OneDrive/Desktop/Binghamton/Semester 3/DLD/Final/project_1/project_1.srcs/sources_1/new/multiplier16bit2.v:52]
+WARNING: [Synth 8-7023] instance 'a2' of module 'adder32' has 5 connections declared, but only 3 given [C:/Users/sunkg/OneDrive/Desktop/Binghamton/Semester 3/DLD/Final/project_1/project_1.srcs/sources_1/new/multiplier16bit2.v:52]
+WARNING: [Synth 8-7071] port 'c_in' of module 'adder32' is unconnected for instance 'a3' [C:/Users/sunkg/OneDrive/Desktop/Binghamton/Semester 3/DLD/Final/project_1/project_1.srcs/sources_1/new/multiplier16bit2.v:53]
+WARNING: [Synth 8-7071] port 'c_out' of module 'adder32' is unconnected for instance 'a3' [C:/Users/sunkg/OneDrive/Desktop/Binghamton/Semester 3/DLD/Final/project_1/project_1.srcs/sources_1/new/multiplier16bit2.v:53]
+WARNING: [Synth 8-7023] instance 'a3' of module 'adder32' has 5 connections declared, but only 3 given [C:/Users/sunkg/OneDrive/Desktop/Binghamton/Semester 3/DLD/Final/project_1/project_1.srcs/sources_1/new/multiplier16bit2.v:53]
+WARNING: [Synth 8-7071] port 'c_in' of module 'adder32' is unconnected for instance 'a4' [C:/Users/sunkg/OneDrive/Desktop/Binghamton/Semester 3/DLD/Final/project_1/project_1.srcs/sources_1/new/multiplier16bit2.v:54]
+WARNING: [Synth 8-7071] port 'c_out' of module 'adder32' is unconnected for instance 'a4' [C:/Users/sunkg/OneDrive/Desktop/Binghamton/Semester 3/DLD/Final/project_1/project_1.srcs/sources_1/new/multiplier16bit2.v:54]
+WARNING: [Synth 8-7023] instance 'a4' of module 'adder32' has 5 connections declared, but only 3 given [C:/Users/sunkg/OneDrive/Desktop/Binghamton/Semester 3/DLD/Final/project_1/project_1.srcs/sources_1/new/multiplier16bit2.v:54]
+WARNING: [Synth 8-7071] port 'c_in' of module 'adder32' is unconnected for instance 'a5' [C:/Users/sunkg/OneDrive/Desktop/Binghamton/Semester 3/DLD/Final/project_1/project_1.srcs/sources_1/new/multiplier16bit2.v:55]
+WARNING: [Synth 8-7071] port 'c_out' of module 'adder32' is unconnected for instance 'a5' [C:/Users/sunkg/OneDrive/Desktop/Binghamton/Semester 3/DLD/Final/project_1/project_1.srcs/sources_1/new/multiplier16bit2.v:55]
+WARNING: [Synth 8-7023] instance 'a5' of module 'adder32' has 5 connections declared, but only 3 given [C:/Users/sunkg/OneDrive/Desktop/Binghamton/Semester 3/DLD/Final/project_1/project_1.srcs/sources_1/new/multiplier16bit2.v:55]
+WARNING: [Synth 8-7071] port 'c_in' of module 'adder32' is unconnected for instance 'a6' [C:/Users/sunkg/OneDrive/Desktop/Binghamton/Semester 3/DLD/Final/project_1/project_1.srcs/sources_1/new/multiplier16bit2.v:56]
+WARNING: [Synth 8-7071] port 'c_out' of module 'adder32' is unconnected for instance 'a6' [C:/Users/sunkg/OneDrive/Desktop/Binghamton/Semester 3/DLD/Final/project_1/project_1.srcs/sources_1/new/multiplier16bit2.v:56]
+WARNING: [Synth 8-7023] instance 'a6' of module 'adder32' has 5 connections declared, but only 3 given [C:/Users/sunkg/OneDrive/Desktop/Binghamton/Semester 3/DLD/Final/project_1/project_1.srcs/sources_1/new/multiplier16bit2.v:56]
+WARNING: [Synth 8-7071] port 'c_in' of module 'adder32' is unconnected for instance 'a7' [C:/Users/sunkg/OneDrive/Desktop/Binghamton/Semester 3/DLD/Final/project_1/project_1.srcs/sources_1/new/multiplier16bit2.v:57]
+WARNING: [Synth 8-7071] port 'c_out' of module 'adder32' is unconnected for instance 'a7' [C:/Users/sunkg/OneDrive/Desktop/Binghamton/Semester 3/DLD/Final/project_1/project_1.srcs/sources_1/new/multiplier16bit2.v:57]
+WARNING: [Synth 8-7023] instance 'a7' of module 'adder32' has 5 connections declared, but only 3 given [C:/Users/sunkg/OneDrive/Desktop/Binghamton/Semester 3/DLD/Final/project_1/project_1.srcs/sources_1/new/multiplier16bit2.v:57]
+WARNING: [Synth 8-7071] port 'c_in' of module 'adder32' is unconnected for instance 'a8' [C:/Users/sunkg/OneDrive/Desktop/Binghamton/Semester 3/DLD/Final/project_1/project_1.srcs/sources_1/new/multiplier16bit2.v:58]
+WARNING: [Synth 8-7071] port 'c_out' of module 'adder32' is unconnected for instance 'a8' [C:/Users/sunkg/OneDrive/Desktop/Binghamton/Semester 3/DLD/Final/project_1/project_1.srcs/sources_1/new/multiplier16bit2.v:58]
+WARNING: [Synth 8-7023] instance 'a8' of module 'adder32' has 5 connections declared, but only 3 given [C:/Users/sunkg/OneDrive/Desktop/Binghamton/Semester 3/DLD/Final/project_1/project_1.srcs/sources_1/new/multiplier16bit2.v:58]
+WARNING: [Synth 8-7071] port 'c_in' of module 'adder32' is unconnected for instance 'a9' [C:/Users/sunkg/OneDrive/Desktop/Binghamton/Semester 3/DLD/Final/project_1/project_1.srcs/sources_1/new/multiplier16bit2.v:59]
+WARNING: [Synth 8-7071] port 'c_out' of module 'adder32' is unconnected for instance 'a9' [C:/Users/sunkg/OneDrive/Desktop/Binghamton/Semester 3/DLD/Final/project_1/project_1.srcs/sources_1/new/multiplier16bit2.v:59]
+WARNING: [Synth 8-7023] instance 'a9' of module 'adder32' has 5 connections declared, but only 3 given [C:/Users/sunkg/OneDrive/Desktop/Binghamton/Semester 3/DLD/Final/project_1/project_1.srcs/sources_1/new/multiplier16bit2.v:59]
+WARNING: [Synth 8-7071] port 'c_in' of module 'adder32' is unconnected for instance 'a10' [C:/Users/sunkg/OneDrive/Desktop/Binghamton/Semester 3/DLD/Final/project_1/project_1.srcs/sources_1/new/multiplier16bit2.v:60]
+WARNING: [Synth 8-7071] port 'c_out' of module 'adder32' is unconnected for instance 'a10' [C:/Users/sunkg/OneDrive/Desktop/Binghamton/Semester 3/DLD/Final/project_1/project_1.srcs/sources_1/new/multiplier16bit2.v:60]
+WARNING: [Synth 8-7023] instance 'a10' of module 'adder32' has 5 connections declared, but only 3 given [C:/Users/sunkg/OneDrive/Desktop/Binghamton/Semester 3/DLD/Final/project_1/project_1.srcs/sources_1/new/multiplier16bit2.v:60]
+WARNING: [Synth 8-7071] port 'c_in' of module 'adder32' is unconnected for instance 'a11' [C:/Users/sunkg/OneDrive/Desktop/Binghamton/Semester 3/DLD/Final/project_1/project_1.srcs/sources_1/new/multiplier16bit2.v:61]
+WARNING: [Synth 8-7071] port 'c_out' of module 'adder32' is unconnected for instance 'a11' [C:/Users/sunkg/OneDrive/Desktop/Binghamton/Semester 3/DLD/Final/project_1/project_1.srcs/sources_1/new/multiplier16bit2.v:61]
+WARNING: [Synth 8-7023] instance 'a11' of module 'adder32' has 5 connections declared, but only 3 given [C:/Users/sunkg/OneDrive/Desktop/Binghamton/Semester 3/DLD/Final/project_1/project_1.srcs/sources_1/new/multiplier16bit2.v:61]
+WARNING: [Synth 8-7071] port 'c_in' of module 'adder32' is unconnected for instance 'a12' [C:/Users/sunkg/OneDrive/Desktop/Binghamton/Semester 3/DLD/Final/project_1/project_1.srcs/sources_1/new/multiplier16bit2.v:62]
+WARNING: [Synth 8-7071] port 'c_out' of module 'adder32' is unconnected for instance 'a12' [C:/Users/sunkg/OneDrive/Desktop/Binghamton/Semester 3/DLD/Final/project_1/project_1.srcs/sources_1/new/multiplier16bit2.v:62]
+WARNING: [Synth 8-7023] instance 'a12' of module 'adder32' has 5 connections declared, but only 3 given [C:/Users/sunkg/OneDrive/Desktop/Binghamton/Semester 3/DLD/Final/project_1/project_1.srcs/sources_1/new/multiplier16bit2.v:62]
+WARNING: [Synth 8-7071] port 'c_in' of module 'adder32' is unconnected for instance 'a13' [C:/Users/sunkg/OneDrive/Desktop/Binghamton/Semester 3/DLD/Final/project_1/project_1.srcs/sources_1/new/multiplier16bit2.v:63]
+WARNING: [Synth 8-7071] port 'c_out' of module 'adder32' is unconnected for instance 'a13' [C:/Users/sunkg/OneDrive/Desktop/Binghamton/Semester 3/DLD/Final/project_1/project_1.srcs/sources_1/new/multiplier16bit2.v:63]
+WARNING: [Synth 8-7023] instance 'a13' of module 'adder32' has 5 connections declared, but only 3 given [C:/Users/sunkg/OneDrive/Desktop/Binghamton/Semester 3/DLD/Final/project_1/project_1.srcs/sources_1/new/multiplier16bit2.v:63]
+WARNING: [Synth 8-7071] port 'c_in' of module 'adder32' is unconnected for instance 'a14' [C:/Users/sunkg/OneDrive/Desktop/Binghamton/Semester 3/DLD/Final/project_1/project_1.srcs/sources_1/new/multiplier16bit2.v:64]
+WARNING: [Synth 8-7071] port 'c_out' of module 'adder32' is unconnected for instance 'a14' [C:/Users/sunkg/OneDrive/Desktop/Binghamton/Semester 3/DLD/Final/project_1/project_1.srcs/sources_1/new/multiplier16bit2.v:64]
+WARNING: [Synth 8-7023] instance 'a14' of module 'adder32' has 5 connections declared, but only 3 given [C:/Users/sunkg/OneDrive/Desktop/Binghamton/Semester 3/DLD/Final/project_1/project_1.srcs/sources_1/new/multiplier16bit2.v:64]
+INFO: [Synth 8-6155] done synthesizing module 'multiplier16bit2' (0#1) [C:/Users/sunkg/OneDrive/Desktop/Binghamton/Semester 3/DLD/Final/project_1/project_1.srcs/sources_1/new/multiplier16bit2.v:23]
 INFO: [Synth 8-6157] synthesizing module 'multibit_mux__parameterized0' [C:/Users/sunkg/OneDrive/Desktop/Binghamton/Semester 3/DLD/Final/project_1/project_1.srcs/sources_1/imports/Downloads/multibit_mux.v:23]
 	Parameter NUM_INPUTS bound to: 8 - type: integer 
 	Parameter BUS_WIDTH bound to: 32 - type: integer 
@@ -127,36 +181,35 @@ INFO: [Synth 8-6155] done synthesizing module 'Disp7seg' (0#1) [C:/Users/sunkg/O
 INFO: [Synth 8-6155] done synthesizing module 'dispHex16' (0#1) [C:/Users/sunkg/OneDrive/Desktop/Binghamton/Semester 3/DLD/Final/project_1/project_1.srcs/sources_1/imports/Scroll/dispHex16.v:23]
 INFO: [Synth 8-6155] done synthesizing module 'topScrollHex' (0#1) [C:/Users/sunkg/OneDrive/Desktop/Binghamton/Semester 3/DLD/Final/project_1/project_1.srcs/sources_1/imports/Scroll/topScrollHex.v:1]
 INFO: [Synth 8-6155] done synthesizing module 'final' (0#1) [C:/Users/sunkg/OneDrive/Desktop/Binghamton/Semester 3/DLD/Final/project_1/project_1.srcs/sources_1/new/final.v:23]
-WARNING: [Synth 8-3848] Net led in module/entity final does not have driver. [C:/Users/sunkg/OneDrive/Desktop/Binghamton/Semester 3/DLD/Final/project_1/project_1.srcs/sources_1/new/final.v:29]
-WARNING: [Synth 8-7129] Port led[15] in module final is either unconnected or has no load
-WARNING: [Synth 8-7129] Port led[14] in module final is either unconnected or has no load
-WARNING: [Synth 8-7129] Port led[13] in module final is either unconnected or has no load
-WARNING: [Synth 8-7129] Port led[12] in module final is either unconnected or has no load
-WARNING: [Synth 8-7129] Port led[11] in module final is either unconnected or has no load
-WARNING: [Synth 8-7129] Port led[10] in module final is either unconnected or has no load
-WARNING: [Synth 8-7129] Port led[9] in module final is either unconnected or has no load
-WARNING: [Synth 8-7129] Port led[8] in module final is either unconnected or has no load
-WARNING: [Synth 8-7129] Port led[7] in module final is either unconnected or has no load
-WARNING: [Synth 8-7129] Port led[6] in module final is either unconnected or has no load
-WARNING: [Synth 8-7129] Port led[5] in module final is either unconnected or has no load
-WARNING: [Synth 8-7129] Port led[4] in module final is either unconnected or has no load
-WARNING: [Synth 8-7129] Port led[3] in module final is either unconnected or has no load
-WARNING: [Synth 8-7129] Port led[2] in module final is either unconnected or has no load
-WARNING: [Synth 8-7129] Port led[1] in module final is either unconnected or has no load
-WARNING: [Synth 8-7129] Port led[0] in module final is either unconnected or has no load
+WARNING: [Synth 8-7129] Port led[15] in module ALU is either unconnected or has no load
+WARNING: [Synth 8-7129] Port led[14] in module ALU is either unconnected or has no load
+WARNING: [Synth 8-7129] Port led[13] in module ALU is either unconnected or has no load
+WARNING: [Synth 8-7129] Port led[12] in module ALU is either unconnected or has no load
+WARNING: [Synth 8-7129] Port led[11] in module ALU is either unconnected or has no load
+WARNING: [Synth 8-7129] Port led[10] in module ALU is either unconnected or has no load
+WARNING: [Synth 8-7129] Port led[9] in module ALU is either unconnected or has no load
+WARNING: [Synth 8-7129] Port led[8] in module ALU is either unconnected or has no load
+WARNING: [Synth 8-7129] Port led[7] in module ALU is either unconnected or has no load
+WARNING: [Synth 8-7129] Port led[6] in module ALU is either unconnected or has no load
+WARNING: [Synth 8-7129] Port led[5] in module ALU is either unconnected or has no load
+WARNING: [Synth 8-7129] Port led[4] in module ALU is either unconnected or has no load
+WARNING: [Synth 8-7129] Port led[3] in module ALU is either unconnected or has no load
+WARNING: [Synth 8-7129] Port led[2] in module ALU is either unconnected or has no load
+WARNING: [Synth 8-7129] Port led[1] in module ALU is either unconnected or has no load
+WARNING: [Synth 8-7129] Port clk in module ALU is either unconnected or has no load
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 1288.566 ; gain = 603.855
+Finished RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 1287.711 ; gain = 603.715
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 1288.566 ; gain = 603.855
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 1287.711 ; gain = 603.715
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 1288.566 ; gain = 603.855
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 1287.711 ; gain = 603.715
 ---------------------------------------------------------------------------------
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.013 . Memory (MB): peak = 1288.566 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.022 . Memory (MB): peak = 1287.711 ; gain = 0.000
 INFO: [Project 1-570] Preparing netlist for logic optimization
 
 Processing XDC Constraints
@@ -173,38 +226,38 @@ INFO: [Project 1-236] Implementation specific constraints were found while readi
 Resolution: To avoid this warning, move constraints listed in [.Xil/final_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
 Completed Processing XDC Constraints
 
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 1375.059 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 1365.855 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.006 . Memory (MB): peak = 1375.059 ; gain = 0.000
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.007 . Memory (MB): peak = 1365.855 ; gain = 0.000
 INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
 INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 1375.059 ; gain = 690.348
+Finished Constraint Validation : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 1365.855 ; gain = 681.859
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7a35tcpg236-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 1375.059 ; gain = 690.348
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 1365.855 ; gain = 681.859
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 1375.059 ; gain = 690.348
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 1365.855 ; gain = 681.859
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:12 ; elapsed = 00:00:12 . Memory (MB): peak = 1375.059 ; gain = 690.348
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 1365.855 ; gain = 681.859
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start RTL Component Statistics 
 ---------------------------------------------------------------------------------
 Detailed RTL Component Info : 
 +---XORs : 
-	   3 Input      1 Bit         XORs := 304   
+	   3 Input      1 Bit         XORs := 528   
 	   2 Input      1 Bit         XORs := 16    
 +---Registers : 
 	                1 Bit    Registers := 67    
@@ -242,27 +295,26 @@ WARNING: [Synth 8-7129] Port led[4] in module final is either unconnected or has
 WARNING: [Synth 8-7129] Port led[3] in module final is either unconnected or has no load
 WARNING: [Synth 8-7129] Port led[2] in module final is either unconnected or has no load
 WARNING: [Synth 8-7129] Port led[1] in module final is either unconnected or has no load
-WARNING: [Synth 8-7129] Port led[0] in module final is either unconnected or has no load
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:24 ; elapsed = 00:00:24 . Memory (MB): peak = 1564.055 ; gain = 879.344
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:21 ; elapsed = 00:00:22 . Memory (MB): peak = 1566.133 ; gain = 882.137
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:28 ; elapsed = 00:00:29 . Memory (MB): peak = 1564.055 ; gain = 879.344
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:25 ; elapsed = 00:00:27 . Memory (MB): peak = 1566.969 ; gain = 882.973
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:35 ; elapsed = 00:00:36 . Memory (MB): peak = 1725.957 ; gain = 1041.246
+Finished Timing Optimization : Time (s): cpu = 00:00:35 ; elapsed = 00:00:36 . Memory (MB): peak = 1782.098 ; gain = 1098.102
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:35 ; elapsed = 00:00:36 . Memory (MB): peak = 1736.031 ; gain = 1051.320
+Finished Technology Mapping : Time (s): cpu = 00:00:35 ; elapsed = 00:00:37 . Memory (MB): peak = 1783.156 ; gain = 1099.160
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start IO Insertion
@@ -280,37 +332,37 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:00:38 ; elapsed = 00:00:39 . Memory (MB): peak = 1783.133 ; gain = 1098.422
+Finished IO Insertion : Time (s): cpu = 00:00:38 ; elapsed = 00:00:39 . Memory (MB): peak = 1783.156 ; gain = 1099.160
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:38 ; elapsed = 00:00:39 . Memory (MB): peak = 1783.133 ; gain = 1098.422
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:38 ; elapsed = 00:00:39 . Memory (MB): peak = 1783.156 ; gain = 1099.160
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:38 ; elapsed = 00:00:39 . Memory (MB): peak = 1783.133 ; gain = 1098.422
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:38 ; elapsed = 00:00:39 . Memory (MB): peak = 1783.156 ; gain = 1099.160
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:00:38 ; elapsed = 00:00:39 . Memory (MB): peak = 1783.133 ; gain = 1098.422
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:38 ; elapsed = 00:00:39 . Memory (MB): peak = 1783.156 ; gain = 1099.160
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:38 ; elapsed = 00:00:39 . Memory (MB): peak = 1783.133 ; gain = 1098.422
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:38 ; elapsed = 00:00:39 . Memory (MB): peak = 1783.156 ; gain = 1099.160
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:00:38 ; elapsed = 00:00:39 . Memory (MB): peak = 1783.133 ; gain = 1098.422
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:38 ; elapsed = 00:00:39 . Memory (MB): peak = 1783.156 ; gain = 1099.160
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -329,40 +381,40 @@ Report Cell Usage:
 |1     |BUFG   |     1|
 |2     |CARRY4 |    20|
 |3     |LUT1   |    11|
-|4     |LUT2   |   152|
-|5     |LUT3   |    19|
-|6     |LUT4   |   144|
-|7     |LUT5   |    49|
-|8     |LUT6   |   337|
-|9     |MUXF7  |     5|
-|10    |FDRE   |   146|
+|4     |LUT2   |   144|
+|5     |LUT3   |    22|
+|6     |LUT4   |   130|
+|7     |LUT5   |    53|
+|8     |LUT6   |   362|
+|9     |MUXF7  |    15|
+|10    |FDRE   |   147|
 |11    |IBUF   |    22|
-|12    |OBUF   |    11|
-|13    |OBUFT  |    16|
+|12    |OBUF   |    12|
+|13    |OBUFT  |    15|
 +------+-------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:00:38 ; elapsed = 00:00:39 . Memory (MB): peak = 1783.133 ; gain = 1098.422
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:38 ; elapsed = 00:00:39 . Memory (MB): peak = 1783.156 ; gain = 1099.160
 ---------------------------------------------------------------------------------
-Synthesis finished with 0 errors, 0 critical warnings and 17 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:31 ; elapsed = 00:00:37 . Memory (MB): peak = 1783.133 ; gain = 1011.930
-Synthesis Optimization Complete : Time (s): cpu = 00:00:38 ; elapsed = 00:00:39 . Memory (MB): peak = 1783.133 ; gain = 1098.422
+Synthesis finished with 0 errors, 0 critical warnings and 16 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:31 ; elapsed = 00:00:38 . Memory (MB): peak = 1783.156 ; gain = 1021.016
+Synthesis Optimization Complete : Time (s): cpu = 00:00:38 ; elapsed = 00:00:39 . Memory (MB): peak = 1783.156 ; gain = 1099.160
 INFO: [Project 1-571] Translating synthesized netlist
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.014 . Memory (MB): peak = 1792.340 ; gain = 0.000
-INFO: [Netlist 29-17] Analyzing 25 Unisim elements for replacement
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.014 . Memory (MB): peak = 1792.160 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 35 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1795.996 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1795.832 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Synth Design complete | Checksum: e4514eb1
+Synth Design complete | Checksum: a64db4e4
 INFO: [Common 17-83] Releasing license: Synthesis
-83 Infos, 64 Warnings, 2 Critical Warnings and 0 Errors encountered.
+81 Infos, 103 Warnings, 2 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:00:40 ; elapsed = 00:00:43 . Memory (MB): peak = 1795.996 ; gain = 1298.406
+synth_design: Time (s): cpu = 00:00:41 ; elapsed = 00:00:44 . Memory (MB): peak = 1795.832 ; gain = 1296.199
 INFO: [runtcl-6] Synthesis results are not added to the cache due to CRITICAL_WARNING
-Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 1795.996 ; gain = 0.000
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 1795.832 ; gain = 0.000
 INFO: [Common 17-1381] The checkpoint 'C:/Users/sunkg/OneDrive/Desktop/Binghamton/Semester 3/DLD/Final/project_1/project_1.runs/synth_1/final.dcp' has been generated.
 INFO: [Vivado 12-24828] Executing command : report_utilization -file final_utilization_synth.rpt -pb final_utilization_synth.pb
-INFO: [Common 17-206] Exiting Vivado at Mon Dec  8 18:46:39 2025...
+INFO: [Common 17-206] Exiting Vivado at Tue Dec  9 14:57:48 2025...

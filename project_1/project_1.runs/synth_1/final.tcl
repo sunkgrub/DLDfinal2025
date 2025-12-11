@@ -58,7 +58,7 @@ if {$::dispatch::connected} {
 OPTRACE "synth_1" START { ROLLUP_AUTO }
 set_param chipscope.maxJobs 5
 set_param general.usePosixSpawnForFork 1
-set_param synth.incrementalSynthesisCache C:/Users/sunkg/AppData/Roaming/Xilinx/Vivado/.Xil/Vivado-15864-Alienware-M16R2/incrSyn
+set_param synth.incrementalSynthesisCache C:/Users/sunkg/AppData/Roaming/Xilinx/Vivado/.Xil/Vivado-12992-Alienware-M16R2/incrSyn
 set_param checkpoint.writeSynthRtdsInDcp 1
 set_param xicom.use_bs_reader 1
 set_msg_config -id {Synth 8-256} -limit 10000
@@ -84,6 +84,7 @@ read_verilog -library xil_defaultlib {
   {C:/Users/sunkg/OneDrive/Desktop/Binghamton/Semester 3/DLD/Final/project_1/project_1.srcs/sources_1/imports/Scroll/ScrollFSM.v}
   {C:/Users/sunkg/OneDrive/Desktop/Binghamton/Semester 3/DLD/Final/project_1/project_1.srcs/sources_1/imports/Scroll/ScrollNextstate.v}
   {C:/Users/sunkg/OneDrive/Desktop/Binghamton/Semester 3/DLD/Final/project_1/project_1.srcs/sources_1/new/adder16bit.v}
+  {C:/Users/sunkg/OneDrive/Desktop/Binghamton/Semester 3/DLD/Final/project_1/project_1.srcs/sources_1/new/adder32.v}
   {C:/Users/sunkg/OneDrive/Desktop/Binghamton/Semester 3/DLD/Final/project_1/project_1.srcs/sources_1/new/adder4bit.v}
   {C:/Users/sunkg/OneDrive/Desktop/Binghamton/Semester 3/DLD/Final/project_1/project_1.srcs/sources_1/imports/Scroll/counter16.v}
   C:/Users/sunkg/Downloads/debouncer.v
@@ -91,10 +92,8 @@ read_verilog -library xil_defaultlib {
   {C:/Users/sunkg/OneDrive/Desktop/Binghamton/Semester 3/DLD/Final/Verilog/dff_en.v}
   {C:/Users/sunkg/OneDrive/Desktop/Binghamton/Semester 3/DLD/Final/project_1/project_1.srcs/sources_1/imports/Scroll/dispHex16.v}
   {C:/Users/sunkg/OneDrive/Desktop/Binghamton/Semester 3/DLD/Final/Verilog/Custom Verilog/ALU/full_adder.v}
-  {C:/Users/sunkg/OneDrive/Desktop/Binghamton/Semester 3/DLD/Final/project_1/project_1.srcs/sources_1/new/mult16x1.v}
   {C:/Users/sunkg/OneDrive/Desktop/Binghamton/Semester 3/DLD/Final/project_1/project_1.srcs/sources_1/imports/Downloads/multibit_mux.v}
-  {C:/Users/sunkg/OneDrive/Desktop/Binghamton/Semester 3/DLD/Final/project_1/project_1.srcs/sources_1/new/multiplier16bit.v}
-  {C:/Users/sunkg/OneDrive/Desktop/Binghamton/Semester 3/DLD/Final/project_1/project_1.srcs/sources_1/new/multiplier1bit.v}
+  {C:/Users/sunkg/OneDrive/Desktop/Binghamton/Semester 3/DLD/Final/project_1/project_1.srcs/sources_1/new/multiplier16bit2.v}
   {C:/Users/sunkg/OneDrive/Desktop/Binghamton/Semester 3/DLD/Final/Verilog/Custom Verilog/Opcode FSM/nextStateLogic.v}
   {C:/Users/sunkg/OneDrive/Desktop/Binghamton/Semester 3/DLD/Final/project_1/project_1.srcs/sources_1/new/opcodeFSM.v}
   {C:/Users/sunkg/OneDrive/Desktop/Binghamton/Semester 3/DLD/Final/Verilog/Custom Verilog/Opcode FSM/opcodeLogic.v}
